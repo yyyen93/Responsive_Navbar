@@ -6,31 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive navbar</title>
     <link rel="shortcut icon" href="./assets/img/img_1.jpg" type="image/x-icon">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/ionicons.css">
-    <link rel="stylesheet" href="/css/query.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="./css/query.css">
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,300italic' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
     <header>
         <nav>
             <div class="row">
-                <img src="./assets/img/img_2.png" alt="logo" class="logo">
+                <img src="./assets/img/img_2.png" alt=" logo" class="logo">
                 <ul class="main-nav js--main-nav">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About me</a></li>
-                    <li><a href="#">My work</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#features">Home</a></li>
+                    <li><a href="#works">How it works</a></li>
+                    <li><a href="#cities">Contact</a></li>
+                    <li><a href="#plans">Sign up</a></li>
                 </ul>
-                <a class="mobile-nav-icon js--nav-icon"><i class="ion-navicon-round"></i></a>
+                <a class="mobile-nav-icon">
+                    <ion-icon class="js--icon-hamburger" name="menu-outline"></ion-icon>
+                </a>
             </div>
         </nav>
     </header>
 
-
+    <script src="./js/slightToggle.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 
 </html>
