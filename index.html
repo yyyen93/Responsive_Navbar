@@ -1,36 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive navbar</title>
+    <title>Responsive Portfolio</title>
     <link rel="shortcut icon" href="./assets/img/img_1.jpg" type="image/x-icon">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/ionicons.css">
-    <link rel="stylesheet" href="/css/query.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/query.css">
 </head>
-
 <body>
-    <header>
-        <nav>
-            <div class="row">
-                <img src="./assets/img/img_2.png" alt="logo" class="logo">
-                <ul class="main-nav js--main-nav">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About me</a></li>
-                    <li><a href="#">My work</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-                <a class="mobile-nav-icon js--nav-icon"><i class="ion-navicon-round"></i></a>
+    <!-- Desktop navigation -->
+    <nav class="desktop-nav">
+        <div class="logo"><img src="./assets/img/img_2.png" alt="logo"></div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>   
+    <!-- Mobile navigation -->
+    <nav class="mobile-nav">
+        <div class="logo"><img src="./assets/img/img_2.png" alt="logo"></div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onClick="toggleMenu()">
+                <!-- lines of the hamburger menu -->
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
-        </nav>
-    </header>
+            <!-- Actual links when toggleMenu() executed -->
+            <div class="hamburger-menu-links">
+                <li><a onClick="toggleMenu()" href="#home">Home</a></li>
+                <li><a onClick="toggleMenu()" href="#about">About</a></li>
+                <li><a onClick="toggleMenu()" href="#contact">Contact</a></li>
+            </div>
+
+        </div>
+
+    </nav>
 
 
+    <script src="./js/script.js"></script>
 </body>
-
 </html>
